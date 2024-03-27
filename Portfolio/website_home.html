@@ -7,59 +7,76 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="box-area">
+    <!--This is the Navbar-->
+    <div>
         <header>
-                <nav>
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="https://github.com/EthanWoitas" target="_blank" rel="noopener noreferrer">Github</a>
-                    <a href="contact.html">For Employers</a>
-                </nav>
-            </div>
-        </header>
-
-        <div class="banner-area">
-            <h1>Hello!</h1>
-        </div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="https://github.com/EthanWoitas" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="employerinfo.html">Portfolio</a>
+            </nav>
+        </header>        
     </div>
-
+        
+        <!--This is the static background image and its related elements-->
+    <div class="banner-area">
+        <h1>Hello! :)</h1>
+        <!--
+        <div>
+            <img id=scroll class="scrollanim" src="images/scroll.png">
+            <h4 class="scrollanim">Scroll down</h4>
+        </div>
+        -->
+    </div>
     <!--This is the front page-->
-    <section class="section">
         <div class="title">
-            <h2>Welcome to my website</h2>
-            <p>This was website serves as a place to showcase what I have worked on, 
-            as well as give insight towards who I am both as a person and a developer
+            <h2>Welcome to Ethan's Place</h2>
+            <p>This website serves as a space to showcase my work, 
+            as well as give insight towards who I am both as a person and a developer. Below will explain the navigation bar 
+            and how to use it to explore my website. 
             </p>
-        </div>
-    </section>
-    
-    <!--Everything below will have their own seperate webpages-->
-    <!--This is to showcase projects-->
-    <section id="portfolio" class="section">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-items">
-                <!--Add projects and info here-->
-                <div class="portfolio-item">
-                    <img src="project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
-                </div>
+            <!--This is the image on the right side of the front page-->
+            <div class="wrapper">
+                <img class="ontop" src="images/EthansHover.jpg" alt="image of me and my friend also names Ethan">
+                <img class="behind" src="images/Ethans.jpg" alt="image of me and my friend also names Ethan">
+            </div> 
+            <!--This is the synopsis of the website-->
+            <div id="description">
+                <dl>
+                    <dt>About:</dt>
+                    <dd>The about tab gives you a glimsp into the person I am, not only professionally but also personally.
+                        I provide a synopsis of my education inside and outside of coding, as well as paint picture of who I am
+                        as a person.</dd>
+                    <dt>Projects:</dt>
+                        <dd class="projdesc">The projects tab is broken down into three seperate sections...
+                            <ol>
+                            <li>Current Projects</li>
+                            <li>Hall of Fame</li>
+                            <li>All Projects</li>
+                            </ol>
+                        Current projects displays and documents the progress on what I'm currently working.  
+                        </dd>
+                        <dd class="projdesc">Hall of Fame displays what I consider to my best projects, it is what I am most proud to
+                            showcase and I believe gives an honest representation of my skills as a developer.</dd>
+                        <dd>All Projects is a list of everything I have previously developed as well as a blog that logs the
+                        development of each project.</dd>
+                    <dt>Github:</dt>
+                    <dd>My github profile and contributions. Code for all my projects will be posted here.</dd>
+                    <dt>Portfolio:</dt>
+                    <dd id="bottomspace">The portfolio tab reflects the work that I currently have on my resume. It is intended for 
+                        employers and distills the about me and projects tabs to see who I am and what Im capable of at a quick glance.</dd>
+                </dl>
             </div>
+            <!--This is the footer-->
+            <footer>
+                <div class="bottom">
+                    <h2>Thanks for visiting (:</h2>
+                    <p>If you want to get in contact with me you can reach me at
+                        woitas.dev@gmail.com
+                    </p>
+                </div>  
+            </footer>
         </div>
-    </section>
-    <footer>
-        <section id="contact" class="section">
-            <div class="section">
-                <h2>Contact Me</h2>
-                <p>You can reach me at example@email.com</p>
-            </div>
-        </section>
-    </footer>
 </body>
 </html>
