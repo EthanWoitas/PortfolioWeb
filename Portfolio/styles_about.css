@@ -3,56 +3,92 @@
     padding: 0;
 }
 body{
+    position: relative;
+}
+
+/*Background Image*/
+.banner-area{
     text-align: center;
-}
-.wrapper{
-    width: 90%;
-    margin: 00 auto;
-}
-header{
+    background-image: url(images/plceholder.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
-    height: 80px;
-    background: #A7C7E7;
     position: fixed;
-    outline: outset blue;
 }
-
-.logo{
-    float: left;
-    line-height: 75px;
+.banner-area:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .4;
+    z-index: -1;
 }
-
-.logo a{
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-size: 30px;
+.banner-area h1{
+    padding-top: 13%;
+    position: relative;
+    font-size: 150px;
     color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0 1px;
+    font-weight: 1;
+    outline: 1px black;
+    text-shadow: 5px 1px 2px rgb(0, 0, 0);
 }
-
-.logo a:hover{
-    background-color: white;
-    color: black;  
+/*Fade up animation*/
+@keyframes FadeUp{
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1;
+    }
 }
-
-nav{
+.greeting{
+    animation: FadeUp 1.75s ease-out 0s 1 normal none;
+}
+.main{
+    width: 100%;
+    height: 1000px;
+    background: #ffffff;
+    position: relative;
+    top: 600px;
+    padding-top: 100px;
+}
+/*Image beside the front page text*/
+.wrapper{
+    text-align: center;
+    position: relative;
     float: right;
-    line-height: 75px;
+    width: 50%;
 }
-
-nav a{
-    text-decoration: none;
-    letter-spacing: 4px;
-    font-size: 22px;
-    color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0 1px;
+.behind,
+.ontop{
+    width: 75%;
+    border: 2px groove #6e6e6e; 
+    border-radius: 4vh;
 }
-
-nav a:hover{
-    background-color: white;
-    color: black;  
+.ontop{
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out 0.1s;
+    z-index: 1
+}
+.ontop:hover{
+    opacity: 1;
+}
+#name{
+    width: 50%;
+    position: absolute;
+    text-align: center;
+    padding-top: 50px;
+    float: left;
 }

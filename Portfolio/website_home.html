@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!--This is the Navbar-->
     <div>
@@ -18,54 +19,51 @@
             </nav>
         </header>        
     </div>
-        
-        <!--This is the static background image and its related elements-->
-    <div class="banner-area">
-        <h1>Hello! :)</h1>
-        <!--
-        <div>
-            <img id=scroll class="scrollanim" src="images/scroll.png">
-            <h4 class="scrollanim">Scroll down</h4>
-        </div>
-        -->
-    </div>
+
     <!--This is the front page-->
         <div class="title">
-            <h2>Welcome to Ethan's Place</h2>
-            <p>This website serves as a space to showcase my work, 
-            as well as give insight towards who I am both as a person and a developer. Below will explain the navigation bar 
-            and how to use it to explore my website. 
+            <h2>Welcome to Ethan's place</h2>
+            <p>What is my place? My place is a website I have built as a project and a space to develop my front end skills, showcase my work in a portfolio, 
+            as well as give insight towards who I am as a person. Conceptually, each tab above will be styled differently in a way that
+            reflects their functions. While this page may appear primitive, the stylings will greatly differ from page to page.
+            Below will explain the navigation bar and describe the logic behind the styling. 
             </p>
-            <!--This is the image on the right side of the front page-->
-            <div class="wrapper">
-                <img class="ontop" src="images/EthansHover.jpg" alt="image of me and my friend also names Ethan">
-                <img class="behind" src="images/Ethans.jpg" alt="image of me and my friend also names Ethan">
-            </div> 
+
             <!--This is the synopsis of the website-->
             <div id="description">
                 <dl>
-                    <dt>About:</dt>
-                    <dd>The about tab gives you a glimsp into the person I am, not only professionally but also personally.
+                    <!--About Section-->
+                    <div class="sectionBox">
+                    <dt style="text-decoration: underline 1px;">About</dt>
+                        <dd>The about tab gives you a glimpse into the person I am, not only professionally but also personally.
                         I provide a synopsis of my education inside and outside of coding, as well as paint picture of who I am
-                        as a person.</dd>
-                    <dt>Projects:</dt>
-                        <dd class="projdesc">The projects tab is broken down into three seperate sections...
+                        as a person.
+                        </dd>
+                        <dd>As such, I've decided to style it with personality. There are elements of humour and passion, and simply doesn't
+                        take it self too seriously while still being functional. 
+                        </dd>
+                    </div>
+                    <!--Projects Section-->
+                    <div class="sectionBox">
+                    <dt style="text-decoration: underline 1px;">Projects</dt>
+                        <dd class="projdesc">The projects tab is broken down into three separate sections...
                             <ol>
                             <li>Current Projects</li>
                             <li>Hall of Fame</li>
                             <li>All Projects</li>
                             </ol>
-                        Current projects displays and documents the progress on what I'm currently working.  
-                        </dd>
-                        <dd class="projdesc">Hall of Fame displays what I consider to my best projects, it is what I am most proud to
-                            showcase and I believe gives an honest representation of my skills as a developer.</dd>
-                        <dd>All Projects is a list of everything I have previously developed as well as a blog that logs the
-                        development of each project.</dd>
-                    <dt>Github:</dt>
-                    <dd>My github profile and contributions. Code for all my projects will be posted here.</dd>
-                    <dt>Portfolio:</dt>
-                    <dd id="bottomspace">The portfolio tab reflects the work that I currently have on my resume. It is intended for 
+                        <dd>This section boasts functionality, favouring efficiency and logic over everything.</dd>
+                    </div>
+                    <!--Github Section-->
+                    <div class="sectionBox">
+                    <dt style="text-decoration: underline 1px;">Github</dt>
+                        <dd>A direct link to my github profile and contributions. Code for all my projects will be posted here.</dd>
+                    </div>
+                    <div class="sectionBox">
+                    <dt style="text-decoration: underline 1px;">Portfolio</dt>
+                        <dd id="bottomspace">The portfolio tab reflects the work that I currently have on my resume. It is intended for 
                         employers and distills the about me and projects tabs to see who I am and what Im capable of at a quick glance.</dd>
+                    </div>
                 </dl>
             </div>
             <!--This is the footer-->
